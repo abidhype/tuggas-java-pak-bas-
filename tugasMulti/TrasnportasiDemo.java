@@ -16,25 +16,42 @@ class KendaraanDarat extends Kendaraan {
     return "Ini berasal dari class KendaraanDarat"; 
   }
 }
+
  
 class Mobil extends KendaraanDarat {
-  String lihatSpec() { 
-    return "Merk: " + merk + ", Tahun Produksi: " + tahunProduksi + ", Jumlah Roda: " + jumlahRoda;
-  } 
+  String jenisMesin ="lisrtik";
+
   String cekMobil() { 
     return "Ini berasal dari class Mobil"; 
   }
+}
+
+class MobilListrik extends Mobil {
+  int kapasitasBaterai = 75;
+   
+  String cekMobilListrik() { 
+    return "Ini berasal dari class MobilListrik"; 
+  }
+}
+class info extends MobilListrik{
+    String infoKendaraan(){
+        return "Merk: "+merk+"\nTahun Produksi: "+tahunProduksi+"\nJumlah Roda: "+jumlahRoda+"\nJenis Mesin: "+jenisMesin+"\nKapasitas Baterai: "+kapasitasBaterai;
+    }
+
 }
  
 public class TrasnportasiDemo {
   public static void main(String args[]){
      
-    Mobil netbookAndi = new Mobil();
+    info mobilListrik = new info();
      
-    System.out.println(netbookAndi.lihatSpec());
-    System.out.println(netbookAndi.cekKendaraan());
-    System.out.println(netbookAndi.cekKendaraanDarat());
-    System.out.println(netbookAndi.cekMobil());
+    
+
+    System.out.println(mobilListrik.infoKendaraan());
+    System.out.println(mobilListrik.cekKendaraan());
+    System.out.println(mobilListrik.cekKendaraanDarat());
+    System.out.println(mobilListrik.cekMobil());
+    System.out.println(mobilListrik.cekMobilListrik());
    
   }
 }
