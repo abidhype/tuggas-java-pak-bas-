@@ -35,9 +35,11 @@ class MobilListrik extends Mobil {
 }
 class info extends MobilListrik{
     String infoKendaraan(){
-        return "Merk: "+merk+"\nTahun Produksi: "+tahunProduksi+"\nJumlah Roda: "+jumlahRoda+"\nJenis Mesin: "+jenisMesin+"\nKapasitas Baterai: "+kapasitasBaterai;
+      return "Merk: "+merk+"\nTahun Produksi: "+tahunProduksi+"\nJumlah Roda: "+jumlahRoda+"\nJenis Mesin: "+jenisMesin+"\nKapasitas Baterai: "+kapasitasBaterai;
     }
-
+    String nyalKanMesin(){
+      return "ehwfhwuihuuihfshuhuuuiuihhsdfufduh";
+    }
 }
  
 public class TrasnportasiDemo {
